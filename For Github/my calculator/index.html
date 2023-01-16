@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="main-content">
+        <h1>Paul Frank Chidi Nwudo</h1>
+        <div class="calculadora">
+            <h1>Calculator</h1>
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td class="button"onclick ="clean()"><button>C</button></td>
+                    <td class="button"onclick ="back()"><button><</button></td>
+                    <td class="button"onclick ="insert('/')"><button>/</button></td>
+                    <td class="button"onclick ="insert('*')"><button>X</button></td>
+
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert('7')"><button>7</button></td>
+                    <td class="button" onclick="insert('8')"><button>8</button></td>
+                    <td class="button" onclick="insert('9')"><button>9</button></td>
+                    <td class="button" onclick="insert('-')"><button>-</button></td>
+
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert('4')"><button>4</button></td>
+                    <td class="button" onclick="insert('5')"><button>5</button></td>
+                    <td class="button" onclick="insert('6')"><button>6</button></td>
+                    <td class="button" onclick ="insert('+')"><button>+</button></td>
+
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert('1')"><button>1</button></td>
+                    <td class="button" onclick="insert('2')"><button>2</button></td>
+                    <td class="button" onclick="insert('3')"><button>3</button></td>
+                    <td rowspan="2"><button class="button" style="height: 106px;" onclick="calcular()">=</button></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 106px"onclick="insert('0')">0</button></td>
+                    <td class="button" onclick ="insert('.')"><button>.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
